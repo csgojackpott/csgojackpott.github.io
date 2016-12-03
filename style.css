@@ -112,3 +112,17 @@ div#log {
     height:120px;
     border:0.1rem solid orange;
 }
+#winmanager a {
+    display:inline-block;
+    color:white;
+}
+#winmanager a:hover {
+    cursor:pointer;
+    text-decoration:underline;
+}
+.winmanagebox {
+    display:inline-block;
+}
+#winnerdata {
+    display:none;
+}

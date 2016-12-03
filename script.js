@@ -15,3 +15,24 @@ function cut() {
         list.removeChild(list.childNodes[11]);
     }
 }
+function timerstart() {
+    var t=120;
+    setInterval(function () {
+    document.getElementById('timer').innerHTML = t;
+    t-=1;
+    },1000);
+}
+function wait(duration) {
+    for (duration;duration>0;--duration) {
+    }
+}
+function winnerchoose() {
+    var winners = document.getElementsByClassName('winnerchoose');
+    console.log(winners)
+    for (i=0; i<winners.length; i++) {
+        var thiswinner = winners[i].innerText;
+        var winnerhtml = winnerhtml + '<input type="radio" class="winmanagebox" name="'+i+'" id="'+i+'"><a>'+thiswinner+'</a><br>';
+    }
+    var finalwinnerhtml = winnerhtml+'<input type="submit" name="winnersubmit">';
+    document.getElementById('winnerform').innerHTML = finalwinnerhtml;
+}
