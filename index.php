@@ -18,7 +18,7 @@
 	</div>
 	<div id="sidebar">
 		<img id="logo" src="logo.png">
-		<div class="sidebar_text">
+		<div class="sidebar_text" onclick="location.href='php.php'">
 			0%
 		</div>
 		<div class="sidebar_text">
